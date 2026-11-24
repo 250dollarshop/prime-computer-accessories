@@ -1,0 +1,6 @@
+{
+  "name": "PRIME COMPUTER ACCESSORIES",
+  "description": "Pakistan's luxury destination for original mechanical keyboards, precision gaming mice, studio headsets, 4K monitors, NVMe storage, and GaN chargers with nationwide Cash on Delivery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

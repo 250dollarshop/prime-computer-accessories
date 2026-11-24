@@ -1,0 +1,138 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html {
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+    line-height: 1.65;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-weight: 400;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Sora', 'Poppins', system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  .font-mono-num {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Deep midnight navy gradient surface */
+.bg-navy-gradient {
+  background: linear-gradient(155deg, #0B1224 0%, #0E1733 52%, #111B3A 100%);
+}
+
+/* Glassmorphism dark card & elevated light card */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 12px 32px -12px rgba(15, 23, 42, 0.08), 0 2px 8px -2px rgba(15, 23, 42, 0.04);
+}
+
+.dark .glass-panel {
+  background: rgba(17, 27, 58, 0.56);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  box-shadow: 0 20px 44px -18px rgba(3, 8, 22, 0.72), inset 0 1px 0 rgba(255, 255, 255, 0.07);
+}
+
+/* Pill button with electric blue -> cyan gradient and subtle hover shine */
+.btn-prime {
+  position: relative;
+  overflow: hidden;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #2F6BFF 0%, #22D3EE 100%);
+  color: #ffffff;
+  font-weight: 500;
+  box-shadow: 0 10px 26px -8px rgba(47, 107, 255, 0.52);
+  transition: transform 200ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 200ms cubic-bezier(0.16, 1, 0.3, 1), filter 200ms ease;
+}
+
+.btn-prime::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 55%;
+  background: linear-gradient(
+    115deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.28) 50%,
+    transparent 100%
+  );
+  transform: translateX(-160%) skewX(-18deg);
+  transition: transform 650ms cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.btn-prime:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 32px -6px rgba(34, 211, 238, 0.48);
+  filter: brightness(1.04);
+}
+
+.btn-prime:hover::after {
+  transform: translateX(260%) skewX(-18deg);
+}
+
+/* Gentle floating animation for hero product */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.35);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.55);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-float-slow {
+    animation: none !important;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
