@@ -91,7 +91,7 @@ export const Navbar: React.FC = () => {
             className="group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2F6BFF] rounded-xl bg-white px-2.5 py-1 border border-slate-200/80 dark:border-white/25 shadow-sm hover:shadow-[0_0_20px_rgba(34,211,238,0.35)] hover:scale-[1.03] transition-all duration-200 shrink-0"
           >
             <img
-              src="/assets/aistudio/prime_computer_logo_45976eac.png"
+              src={`${import.meta.env.BASE_URL}assets/aistudio/prime_computer_logo_45976eac.png`}
               alt="PRIME COMPUTER ACCESSORIES"
               className="h-9 sm:h-11 w-auto object-contain select-none"
             />

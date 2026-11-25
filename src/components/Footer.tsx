@@ -27,7 +27,7 @@ export const Footer: React.FC = () => {
               className="inline-block bg-white rounded-2xl px-4 py-2.5 border border-white/20 shadow-lg hover:shadow-[0_0_24px_rgba(34,211,238,0.35)] hover:scale-[1.02] transition-all duration-200"
             >
               <img
-                src="/assets/aistudio/prime_computer_logo_45976eac.png"
+                src={`${import.meta.env.BASE_URL}assets/aistudio/prime_computer_logo_45976eac.png`}
                 alt="PRIME COMPUTER ACCESSORIES"
                 className="h-14 sm:h-16 w-auto object-contain select-none"
               />
@@ -69,60 +69,12 @@ export const Footer: React.FC = () => {
               Quick Links
             </h4>
             <ul className="space-y-2 text-sm text-slate-400">
-              <li>
-                <button
-                  type="button"
-                  onClick={() => navigate({ name: 'shop', categoryFilter: 'all' })}
-                  className="hover:text-cyan-300 transition-colors"
-                >
-                  Shop All Products
-                </button>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  onClick={() => navigate({ name: 'shop', collectionFilter: 'flash-sale' })}
-                  className="hover:text-cyan-300 transition-colors"
-                >
-                  Flash Sale Deals
-                </button>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  onClick={() => navigate({ name: 'about' })}
-                  className="hover:text-cyan-300 transition-colors"
-                >
-                  About Us
-                </button>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  onClick={() => navigate({ name: 'faq' })}
-                  className="hover:text-cyan-300 transition-colors"
-                >
-                  FAQ &amp; Warranty
-                </button>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  onClick={() => navigate({ name: 'shipping-returns' })}
-                  className="hover:text-cyan-300 transition-colors"
-                >
-                  Shipping &amp; Returns
-                </button>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  onClick={() => navigate({ name: 'account' })}
-                  className="hover:text-cyan-300 transition-colors"
-                >
-                  Order History
-                </button>
-              </li>
+              <li><button type="button" onClick={() => navigate({ name: 'shop', categoryFilter: 'all' })} className="hover:text-cyan-300 transition-colors">Shop All Products</button></li>
+              <li><button type="button" onClick={() => navigate({ name: 'shop', collectionFilter: 'flash-sale' })} className="hover:text-cyan-300 transition-colors">Flash Sale Deals</button></li>
+              <li><button type="button" onClick={() => navigate({ name: 'about' })} className="hover:text-cyan-300 transition-colors">About Us</button></li>
+              <li><button type="button" onClick={() => navigate({ name: 'faq' })} className="hover:text-cyan-300 transition-colors">FAQ &amp; Warranty</button></li>
+              <li><button type="button" onClick={() => navigate({ name: 'shipping-returns' })} className="hover:text-cyan-300 transition-colors">Shipping &amp; Returns</button></li>
+              <li><button type="button" onClick={() => navigate({ name: 'account' })} className="hover:text-cyan-300 transition-colors">Order History</button></li>
             </ul>
           </div>
 
@@ -154,23 +106,13 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2.5 text-sm text-slate-400">
               <li className="flex items-start gap-2.5">
                 <Phone className="w-4 h-4 text-[#22D3EE] shrink-0 mt-0.5" />
-                <a
-                  href={`https://wa.me/${STORE_INFO.whatsappNumber}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors font-mono-num"
-                >
+                <a href={`https://wa.me/${STORE_INFO.whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors font-mono-num">
                   {STORE_INFO.phone} (WhatsApp / Call)
                 </a>
               </li>
               <li className="flex items-start gap-2.5">
                 <Mail className="w-4 h-4 text-[#22D3EE] shrink-0 mt-0.5" />
-                <a
-                  href={`mailto:${STORE_INFO.email}`}
-                  className="hover:text-white transition-colors break-all"
-                >
-                  {STORE_INFO.email}
-                </a>
+                <a href={`mailto:${STORE_INFO.email}`} className="hover:text-white transition-colors break-all">{STORE_INFO.email}</a>
               </li>
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#22D3EE] shrink-0 mt-0.5" />
@@ -179,53 +121,23 @@ export const Footer: React.FC = () => {
             </ul>
 
             <div className="pt-2">
-              <p className="text-[11px] font-medium uppercase tracking-[0.15em] text-slate-400 mb-2">
-                Accepted Payment Methods
-              </p>
+              <p className="text-[11px] font-medium uppercase tracking-[0.15em] text-slate-400 mb-2">Accepted Payment Methods</p>
               <div className="flex flex-wrap gap-1.5 text-[11px] font-medium">
-                <span className="px-3 py-1 rounded-full bg-white/8 border border-white/10 text-slate-200">
-                  Cash on Delivery
-                </span>
-                <span className="px-3 py-1 rounded-full bg-white/8 border border-white/10 text-[#F5C26B]">
-                  JazzCash
-                </span>
-                <span className="px-3 py-1 rounded-full bg-white/8 border border-white/10 text-emerald-300">
-                  Easypaisa
-                </span>
-                <span className="px-3 py-1 rounded-full bg-white/8 border border-white/10 text-cyan-300">
-                  Bank Transfer
-                </span>
+                <span className="px-3 py-1 rounded-full bg-white/8 border border-white/10 text-slate-200">Cash on Delivery</span>
+                <span className="px-3 py-1 rounded-full bg-white/8 border border-white/10 text-[#F5C26B]">JazzCash</span>
+                <span className="px-3 py-1 rounded-full bg-white/8 border border-white/10 text-emerald-300">Easypaisa</span>
+                <span className="px-3 py-1 rounded-full bg-white/8 border border-white/10 text-cyan-300">Bank Transfer</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>
-            &copy; {new Date().getFullYear()} {STORE_INFO.name}. All rights reserved. Prices in PKR.
-          </p>
+          <p>&copy; {new Date().getFullYear()} {STORE_INFO.name}. All rights reserved. Prices in PKR.</p>
           <div className="flex items-center gap-5">
-            <button
-              type="button"
-              onClick={() => navigate({ name: 'contact' })}
-              className="hover:text-slate-300 transition-colors"
-            >
-              Contact
-            </button>
-            <button
-              type="button"
-              onClick={() => navigate({ name: 'shipping-returns' })}
-              className="hover:text-slate-300 transition-colors"
-            >
-              7-Day Return Policy
-            </button>
-            <button
-              type="button"
-              onClick={() => navigate({ name: 'faq' })}
-              className="hover:text-slate-300 transition-colors"
-            >
-              Warranty Terms
-            </button>
+            <button type="button" onClick={() => navigate({ name: 'contact' })} className="hover:text-slate-300 transition-colors">Contact</button>
+            <button type="button" onClick={() => navigate({ name: 'shipping-returns' })} className="hover:text-slate-300 transition-colors">7-Day Return Policy</button>
+            <button type="button" onClick={() => navigate({ name: 'faq' })} className="hover:text-slate-300 transition-colors">Warranty Terms</button>
           </div>
         </div>
       </div>
