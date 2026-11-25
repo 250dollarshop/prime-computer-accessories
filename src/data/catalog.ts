@@ -243,4 +243,9 @@ export const PRODUCTS: Product[] = [
         city: 'Rawalpindi',
         rating: 5,
         date: '09 Nov 2026',
-        comment: 'Best value wireless 60% mechanical board in Pakistan. Zero latency
+      comment: 'Best value wireless 60% mechanical board in Pakistan. Zero latency on 2.4GHz and smooth out-of-the-box red switches.',
+        verified: true,
+      },
+    ],
+  },
+];
