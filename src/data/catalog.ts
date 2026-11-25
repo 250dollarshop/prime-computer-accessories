@@ -249,3 +249,82 @@ export const PRODUCTS: Product[] = [
     ],
   },
 ];
+export const TESTIMONIALS = [
+  {
+    id: 't1',
+    name: 'Shahryar Mahmood',
+    role: 'Principal Software Engineer, Systems Ltd',
+    city: 'Lahore',
+    quote: 'Ordered a Keychron Q1 Pro and Logitech MX Master 3S on Cash on Delivery. Both arrived factory-sealed the next afternoon with proper tax invoice and warranty card.',
+    product: 'Keychron Q1 Pro + MX Master 3S',
+  },
+  {
+    id: 't2',
+    name: 'Maham Farooq',
+    role: 'Senior Product Designer',
+    city: 'Karachi',
+    quote: 'Finally a Pakistani tech store that curates genuine Dell UltraSharp monitors and Anker GaN chargers without grey-market guesswork. WhatsApp support verified stock in 2 minutes.',
+    product: 'Dell UltraSharp 27" 4K',
+  },
+  {
+    id: 't3',
+    name: 'Daniyal Cheema',
+    role: 'Competitive FPS Streamer',
+    city: 'Islamabad',
+    quote: 'Picked up the Superlight 2 and HyperX Cloud III Wireless during the flash drop. Serial numbers registered cleanly on official portals and shipping was free.',
+    product: 'Logitech G PRO X Superlight 2',
+  },
+  {
+    id: 't4',
+    name: 'Ahsan Raza Kazmi',
+    role: 'Video Editor & Colorist',
+    city: 'Rawalpindi',
+    quote: 'Upgraded my editing rig with Crucial T700 Gen5 NVMe and Corsair DDR5 RAM. Best PKR pricing online and zero hidden fees on bank transfer.',
+    product: 'Crucial T700 Pro 2TB NVMe',
+  },
+];
+
+export const FAQ_ITEMS = [
+  {
+    q: 'Are all products at PRIME COMPUTER ACCESSORIES 100% original and sealed?',
+    a: 'Yes. Every keyboard, mouse, headset, monitor, NVMe SSD, and Anker/UGREEN accessory we sell is 100% genuine, brand-new, and factory sealed. Serial numbers can be verified directly on the manufacturer portal (Logitech G Hub, Razer Synapse, Anker Verify, Crucial Storage Executive).',
+  },
+  {
+    q: 'How does Cash on Delivery (COD) work across Pakistan?',
+    a: 'We offer nationwide Cash on Delivery to over 150 cities including Karachi, Lahore, Islamabad, Rawalpindi, Faisalabad, Multan, Peshawar, and Quetta. Orders above Rs. 15,000 qualify for Free Express Delivery; orders below Rs. 15,000 carry a flat Rs. 250 courier fee.',
+  },
+  {
+    q: 'What is your 7-Day Replacement & Warranty policy?',
+    a: 'All hardware carries its official brand or store warranty (6 months to 5 years depending on the item). Additionally, if any item arrives damaged in transit or has a factory defect, we provide a hassle-free 7-day replacement guarantee.',
+  },
+  {
+    q: 'Can I place an order directly on WhatsApp?',
+    a: 'Yes! Add your items to the cart, open Checkout, and click "Order on WhatsApp" — your full cart, selected variants, total PKR amount, and delivery details are automatically formatted and sent to +923298025766.',
+  },
+  {
+    q: 'Which payment methods do you accept?',
+    a: 'You can pay via Cash on Delivery (COD), JazzCash, Easypaisa, or IBFT Bank Transfer. Digital payment account details are provided cleanly at checkout and via our official WhatsApp.',
+  },
+  {
+    q: 'How long does delivery take?',
+    a: 'Lahore same-day or next-day courier. Islamabad, Rawalpindi, Karachi, and major hubs: 1–3 working days via TCS / Leopards Express.',
+  },
+];
+
+export const PAKISTAN_CITIES = [
+  'Lahore',
+  'Karachi',
+  'Islamabad',
+  'Rawalpindi',
+  'Faisalabad',
+  'Multan',
+  'Peshawar',
+  'Quetta',
+  'Sialkot',
+  'Gujranwala',
+  'Hyderabad',
+  'Bahawalpur',
+  'Abbottabad',
+  'Sargodha',
+  'Other City',
+];
